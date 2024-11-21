@@ -4,22 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="/CSS/calculator.css">
+    <script src="/JS/calculator.js"></script>
 </head>
 <body>
-    <form action="">
-        <label for="">Job</label>
-        <input type="text">
-        <label for="">Working Hours</label>
-        <input type="text">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/vacancy.html">Vacancies</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <h1>Income Calculator</h1>
+
+        <label for="job">Job</label>
+        <input type="text" id="job" name="job">
+
+        <label for="">Hours Per Week</label>
+        <input type="text" id="hours" name="hours">
+
         <label for="">Gross Pay</label>
-        <input type="number">
+        <input type="number" id="gross" name="gross" placeholder="In pounds(£)">
+
         <label for="">Time Period</label>
-        <input type="">
+        <select name="timePeriod" id="timePeriod">
+            <option value="year">Year</option>
+            <option value="month">Month</option>
+            <option value="week">Week</option>
+            <option value="hour">Hour</option>
+        </select>
+
         <label for="">Tax Rate</label>
-        <input type="number">
+        <input type="number" id="tax" name="tax">
+
         <label for="">NI Rate</label>
-        <input type="number">
-        <data value=""></data>
-    </form>
+        <input type="number" id="ni" name="ni">
+        <br>
+        <button class="submit" onclick="Calculate();">Submit</button>
+        <!-- <input type="submit" value="submit" onclick="Calculate(); Display()"> -->
+    </div>
+    <br><br>
+    <div id="results">
+        <h1 id="jobs"></h1>
+        <p id="result"></p>
+        <ul>
+            <li id="perhour"></li>
+            <li id="perweek"></li>
+            <li id="permonth"></li>
+            <li id="peryear"></li>
+        </ul>
+    </div>
 </body>
 </html>

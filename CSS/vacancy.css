@@ -8,10 +8,23 @@ body{
 }
 
 .container1{
-    height: 300px;
+    height:auto;
     border-radius: 5px;
     padding: 30px;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container2{
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container1 h1, p{
@@ -22,8 +35,12 @@ body{
 }
 
 .container1 p{
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 ul, li{
@@ -49,4 +66,18 @@ a{
     text-decoration: none;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label{
+    font-size: 30px;
+}
+
+input{
+    width: 40%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#search{
+    display:none;
 }

@@ -42,11 +42,12 @@ input[type="submit"]{
 }
 
 .submit{
-    width: 50%;
-    height: 40px;
+    width: 60%;
+    height: 50px;
     text-transform: uppercase;
     background-color: cornflowerblue;
     color: white;
+    font-size: large;
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid grey;
